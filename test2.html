@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>与君晤</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="images/x-icon">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/fullpage.js"></script>
+    <!-- Swiper JS -->
+    <script src="js/swiper.js"></script>
+</head>
+<body>
+    <!-- 头部导航栏 -->
+    <div id="myMenu">
+        <li data-menuanchor="fourthPage"><a href="#fourthPage">我的</a></li>
+        <li data-menuanchor="thirdPage"><a href="#thirdPage">交流社区</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">文化介绍</a></li>
+        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">首页</a></li>
+        <li><a href="index.html"><img src="images/logo6-web.png" alt="" style="position: absolute;left: 20px;  width: 100px;"></a></li>
+    </div>
+
+    <div id="fullpage">
+        <!-- 第一屏 -->
+        <div class="section" data-anchor="firstPage" id="page1" style="background: url(images/bg-1.png) fixed no-repeat 100%; background-size: cover;">    
+          <div class="di">
+            <img src="images/slide-slogan-1.png" alt="" class="slide-slogan animate__animated animate__bounceInUp">
+             <div class="page-title animate__animated animate__fadeInLeft">
+                <p>
+                    国际文化交流驿站
+                </p>
+                <p>
+                    与君远相知，不道云海深
+                </p>     
+             </div>
+             <div class="page-content animate__animated animate__fadeInLeft">
+                尽管相隔千里万里，只要我们相互了解、彼此相知   <br>
+                再深远辽阔的云海也不会将你我分开。
+             </div>
+             <button class="button animate__animated animate__tada"><a href="login.html">加入我们</a></button>
+             <div class="mouse_slide">
+              <div>
+                <img src="images/鼠标-F.png" alt="" width="60px">
+              </div>
+              <div style="overflow: hidden;">
+                <img src="images/arrow2.gif" alt="" width="290px" style="margin-left: -115px; margin-top: -80px;">
+              </div>
+            </div>
+          </div>
+        
+        </div>
+        <!-- 第二屏 -->
+        <div class="section" data-anchor="secondPage" id="page2">
+            <!-- 第一页 地图 -->
+            <div class="slide" style="background: url(images/worldmap.png); background-size: cover;">
+                
+                    <img src="images/slide-slogan-2.png" alt=""  class="slide-slogan">
+                    <div class="map">
+                        <!-- <img src="images/landmark.png" class="landmark" alt="" id="beijing"> -->
+                        <!-- <img src="images/landmark.png" class="landmark" alt="" id="japan"> -->
+                        <!-- <img src="images/landmark.png" class="landmark" alt="" id="brazil"> -->
+                        <!-- <img src="images/landmark.png" class="landmark" alt="" id="amer"> -->
+                        <!-- <img src="images/landmark.png" class="landmark" alt="" id="africa"> -->
+                        <div style="font-size: 15px; position: absolute; bottom: 0; left: 680px;">
+                            <img src="images/landmark.png" class="landmark animate__heartBeat" alt="地标" id="#1">
+                            请将鼠标悬停于此图标上方查看
+                        </div>
+                        <!-- 中国 -->
+                          <div class="circle" onmouseover="enlargeAndTransform(this)" onmouseout="shrinkAndRestore(this)" id="beijing">
+                            <img src="images/landmark.png" class="landmark animate__heartBeat" alt="" id="beijing-">
+                            <div class="content">
+                              <span>中国</span> <span> · China</span> <br><br>
+                              传统节日包括：春节、中秋、端午、重阳
+                            </div>
+                          </div>
+                          <!-- 日本 -->
+                          <div class="circle" onmouseover="enlargeAndTransform(this)" onmouseout="shrinkAndRestore(this)" id="japan">
+                            <img src="images/landmark.png" class="landmark animate__heartBeat" alt="" id="japan-">
+                            <div class="content">
+                                <span>日本</span> <span> · Japan</span> <br><br>
+                                神道社文化
+                            </div>
+                          </div>
+                          <!-- 意大利 -->
+                          <div class="circle" onmouseover="enlargeAndTransform(this)" onmouseout="shrinkAndRestore(this)" id="italy">
+                            <img src="images/landmark.png" class="landmark animate__heartBeat" alt="" id="italy-">
+                            <div class="content">
+                                <span>意大利</span> <span> · Italy</span> <br>
+                                <br>
+                                主显节、八月节<br>
+                                店门口会插葡萄枝
+                            </div>
+                          </div>
+                          <!-- 巴西 -->
+                          <div class="circle" onmouseover="enlargeAndTransform(this)" onmouseout="shrinkAndRestore(this)" id="brazil">
+                            <img src="images/landmark.png" class="landmark animate__heartBeat" alt="" id="brazil-">
+                            <div class="content">
+                                <span>巴西</span> <span> · Brazil</span> <br>
+                                <br>
+                                主要节日海神节、狂欢节<br>
+                            </div>
+                          </div>
+                          <!-- 墨西哥 -->
+                          <div class="circle" onmouseover="enlargeAndTransform(this)" onmouseout="shrinkAndRestore(this)" id="mexico">
+                            <img src="images/landmark.png" class="landmark animate__heartBeat" alt="" id="mexico-">
+                            <div class="content">
+                                <span>墨西哥</span> <span> · Mexico</span> <br>
+                                <br>
+                                10.31~11.2亡灵节
+                            </div>
+                          </div>
+                          <!-- 埃及 -->
+                          <div class="circle" onmouseover="enlargeAndTransform(this)" onmouseout="shrinkAndRestore(this)" id="egypt">
+                            <img src="images/landmark.png" class="landmark animate__heartBeat" alt="" id="egypt-">
+                            <div class="content">
+                                <span>埃及</span> <span> · Egypt</span> <br>
+                                <br>
+                                每逢周五为“主麻日聚礼”，喜爱甜食，偏爱绿色和白色
+                            </div>
+                          </div>
+                          <div class="mouse_slide">
+                            <div>
+                              <img src="images/鼠标-F.png" alt="" width="60px">
+                            </div>
+                            <div style="overflow: hidden;">
+                              <img src="images/arrow2.gif" alt="" width="290px" style="margin-left: -115px; margin-top: -80px;">
+                            </div>
+                          </div>
+                    </div>      
+            </div>
+            <!-- 第二页 节日 -->
+            <div class="slide">
+                <div class="lunbo">
+                    <!-- 轮播图部分 -->
+                    <div class="container">
+                        <div class="swiper2 mySwiper2">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><a href="detail.html"><img src="images/轮播图-1.png" alt="."></a></div>
+                              <div class="swiper-slide"><a href="detail.html"><img src="images/轮播图-2.png" alt="."></a></div>
+                              <div class="swiper-slide"><a href="detail.html"><img src="images/轮播图-3.png" alt="."></a></div>
+                              <div class="swiper-slide"><a href="detail.html"><img src="images/轮播图-4.png" alt="."></a></div>
+                            </div>
+                          </div>
+                        </div>
+                    <div style="position: absolute; bottom: 50px; left: 600px; font-size: 20px;">可通过鼠标将卡片进行拖拽，点击可查看更多</div>
+                    <div class="mouse_slide">
+                      <div>
+                        <img src="images/鼠标-F.png" alt="" width="60px">
+                      </div>
+                      <div style="overflow: hidden;">
+                        <img src="images/arrow2.gif" alt="" width="290px" style="margin-left: -115px; margin-top: -80px;">
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 第三页  活动类别-->
+            <div class="slide">
+                <div class="leibie">
+                    <div class="center">
+                        <div class="ca">
+                            <img src="images/2-3-ca.png" alt="">
+                         <div class="categories">
+                            <a href="cate.html?id=1"><img src="images/2-3-fest.png" alt=""></a>
+                            <a href="cate.html?id=2"><img src="images/2-3-food.png" alt=""></a>
+                            <img src="images/2-3-art.png" alt="">
+                            <img src="images/2-3-arc.png" alt="">
+                            <img src="images/2-3-cul.png" alt="">
+                            <a href="cate.html?id=1"><img src="images/2-3-more.png" alt=""></a>
+                          </div>
+                        </div>
+                        <div class="acti">
+                            <img src="images/2-3-acti.png" alt="" id="ac">
+                          <div class="acti_de">
+                            <img src="images/2-3-acti-partic.png" alt="">
+                            <img src="images/2-3-acti-crea.png" alt="">
+                          </div>
+                        </div> 
+                        <div class="mouse_slide">
+                          <div>
+                            <img src="images/鼠标-F.png" alt="" width="60px">
+                          </div>
+                          <div style="overflow: hidden;">
+                            <img src="images/arrow2.gif" alt="" width="290px" style="margin-left: -115px; margin-top: -80px;">
+                          </div>
+                        </div>
+                    </div>
+                                       
+                </div>
+                
+            </div>
+        </div>
+        <!-- 第三屏 -->
+        <div class="section" data-anchor="thirdPage" id="page3">
+            <!-- 第一页 -->
+          <div class="slide">
+                <div class="recommendation">
+                    <img src="images/3-1-title.png" alt="" class="re_title">
+                    <div class="box_acti">
+                        <!-- <img src="images/3-1-1.jpg" alt="">
+                        <img src="images/3-1-2.png" alt="">
+                        <img src="images/3-1-3.jpg" alt="">
+                        <img src="images/3-1-4.jpg" alt="">
+                        <img src="images/3-1-5.png" alt="">
+                        <img src="images/3-1-6.png" alt=""> -->
+                        <div class="circle2" onmouseover="enlargeAndTransform2(this)" onmouseout="shrinkAndRestore2(this)">
+                          <img src="images/3-1-1.jpg" alt="">
+                          <div class="content2">
+                            <h2>国际文化节</h2>
+                          </div>
+                        </div>
+                        <div class="circle2" onmouseover="enlargeAndTransform2(this)" onmouseout="shrinkAndRestore2(this)">
+                          <img src="images/3-1-2.png" alt="">
+                          <div class="content2">
+                            <h2>俄语学习</h2>
+                          </div>
+                        </div>
+                        <div class="circle2" onmouseover="enlargeAndTransform2(this)" onmouseout="shrinkAndRestore2(this)">
+                          <img src="images/3-1-3.jpg" alt="">
+                          <div class="content2">
+                            <h2>圣诞节交换礼物</h2>
+                          </div>
+                        </div>
+                        <div class="circle2" onmouseover="enlargeAndTransform2(this)" onmouseout="shrinkAndRestore2(this)">
+                          <img src="images/3-1-4.jpg" alt="">
+                          <div class="content2">
+                            <h2>太极拳交流会</h2>
+                          </div>
+                        </div>
+                        <div class="circle2" onmouseover="enlargeAndTransform2(this)" onmouseout="shrinkAndRestore2(this)">
+                          <img src="images/3-1-5.png" alt="">
+                          <div class="content2">
+                            <h2>啤酒节</h2>
+                          </div>
+                        </div>
+                        <div class="circle2" onmouseover="enlargeAndTransform2(this)" onmouseout="shrinkAndRestore2(this)">
+                          <img src="images/3-1-6.png" alt="">
+                          <div class="content2">
+                            <h2>面具舞会</h2>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="mouse_slide">
+                      <div>
+                        <img src="images/鼠标-F.png" alt="" width="60px">
+                      </div>
+                      <div style="overflow: hidden;">
+                        <img src="images/arrow2.gif" alt="" width="290px" style="margin-left: -115px; margin-top: -80px;">
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 第二页 -->
+            <div class="slide">
+              <div class="budd">
+                <div class="column">
+                  <h2>佛教：探寻内心平静与精神之源的奥秘</h2>
+                  <div>佛教文化源远流长，强调内心平静与禅定。它不仅是一种宗教信仰，更是一种生活方式和哲学思想。通过了解佛教，我们可以更好地探索自己的内心世界，提高精神境界和幸福感。</div>
+                  <img src="images/3-2-2.png" alt="" class="img1">
+                </div>
+                <div class="column">
+                  <img src="images/3-2-3.png" alt="" class="img2">
+                  <h2>你想知道的美食这里都有！</h2>
+                  <div>在江汉路发现一家超级好吃的越南菜餐馆！安利给你们<br><br>
+                    如何做一道地道的四川菜？详细教程求求</div>
+                </div>
+                <div class="column">
+                  <h2>国际交往礼仪看这里！</h2>
+                  <div>和巴基斯坦的朋友们吃饭要注意什么吗？有没有人能解答一下？<br><br>
+                    问问马来西亚的UU们，马来西亚有什么菜适合素食主义者？</div>
+                  <img src="images/3-2-1.png" alt="" class="img1">
+                </div>
+              </div>
+              <div class="mouse_slide">
+                <div>
+                  <img src="images/鼠标-F.png" alt="" width="60px">
+                </div>
+                <div style="overflow: hidden;">
+                  <img src="images/arrow2.gif" alt="" width="290px" style="margin-left: -115px; margin-top: -80px;">
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- 第四屏 -->
+        <div class="section" data-anchor="fourthPage" id="page4" style="background: url(images/bg-4.png) fixed no-repeat 100%; background-size: cover;">
+            <div class="user">
+              <div class="example">
+                <img src="images/4-1-user.png" alt="">
+                <button>账号设置</button>
+                <button>编辑资料</button>
+              </div>
+              <div class="my-">
+                <button id="btn_c" onclick="show_a()">我的活动</button>
+                <button id="btn_g" onclick="show_p()">我的帖子</button>
+                <button id="btn_i" onclick="show_m()">我的消息</button>
+                <div id="div1">参与的活动</div>
+                <div class="image">
+                  <img src="images/3-1-2.png" alt="" id="a1" style="display: block; width: 275px;">
+                  <img src="images/3-1-3.jpg" alt="" id="a2" style="display: block; width: 275px;">
+                  <img src="images/4-2-p.png" alt="" id="a4" style="display: none; width: 545px; border: 5px #000;">
+                 <img src="images/4-2-m.png" alt="" id="a5" style="display: none; width: 545px; box-shadow: 2px 2px 2px 2px rgba(0,0,0,.3);">
+                </div>
+                <div id="div2">发起的活动</div>
+                <div class="image">
+                  <img src="images/3-1-4.jpg" alt="" id="a3" style="display: block; width: 275px;">
+                </div>
+                
+            </div>
+            <div class="mouse_slide">
+              <div>
+                <img src="images/鼠标-F.png" alt="" width="60px">
+              </div>
+              <div style="overflow: hidden;">
+                <img src="images/arrow2.gif" alt="" width="290px" style="margin-left: -115px; margin-top: -80px;">
+              </div>
+            </div>
+            </div>
+            
+        </div>
+        <!-- 关于我们的 -->
+        <div class="section" style="background-color: #1b1f24;">
+          <div class="about_us">
+            <div class="ab">
+              <img src="images/5-about_us.png" alt="">
+            </div>
+            <div class="us">
+              
+              <h4>PRODUCED BY</h4>
+              <p>邹柏艺 ；王佳睿 ； YAP YING HUAN  ；CHEW JIA YING</p>
+              <h4>CONTACT US</h4>
+              <p>湖北省武汉市武昌区武汉大学新闻与传播学院 <br>
+                邮政编码：43007</p>
+              <h4>WEBSITE MAP</h4>
+              <p>首页 文化介绍 交流社区 我的</p>
+              <button>订阅更多信息</button>
+            </div>
+          </div>
+          <p style="font-size: 16px; color: #fff; text-align: center;">Copyright © 2024.GLOBAL CAINIVAL All rights reserved.</p>
+          
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

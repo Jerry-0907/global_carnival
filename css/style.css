@@ -1,0 +1,454 @@
+/* 样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none!important;
+    color: #050505!important;
+}
+/* 导航栏 */
+#myMenu {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background-color: rgba(255, 253, 253,.3);
+}
+#myMenu li {
+    text-align: center;
+    float: right;
+    width: 150px;
+}
+#myMenu li a:hover {
+    /* border-bottom: 2px solid #050505; */
+    color: #fce138!important; 
+}
+#myMenu li .logo {
+    width: 100px;
+}
+.active {
+    font-size: 30px;
+}
+.mouse_slide {
+    position: absolute;
+    overflow: hidden;
+    bottom: -20px;
+    left: 40px;
+}
+/* 第一屏 */
+#page1 {
+    position: relative;
+}
+#page1 .di {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+}
+.di .slide-slogan {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    animation-delay: 1s;
+}
+.page-title {
+    padding-top: 150px;
+    font-size: 60px;
+    color: #050505;
+}
+.page-title p {
+    display: block;
+    margin-left: 100px;
+    height: 80px;
+}
+.page-content {
+    margin-left: 110px;
+    padding-top: 50px;
+    font-size: 20px;
+    color: #050505;
+}
+#page1 .button {
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: #fce138;
+    border: #fff;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 20px;
+    animation-delay: 1s;
+    overflow: hidden;
+}
+/* 第二屏 */
+#page2 .slide {
+    position: relative;
+}
+#page2 .slide .slide-slogan{
+    position: absolute;
+    top: 220px;
+    left: 80px;
+    width: 50px;
+    z-index: 20000;
+    animation-delay: 1s;
+}
+/* 地图页 */
+.map {
+    position: relative;
+    overflow: hidden;
+    height: 800px;
+    width: 100%;
+}
+.landmark {
+    width: 35px;
+    animation-delay: 1.5s;
+}
+/* 国家位置 */
+.map #beijing {
+    position: absolute;
+    top: 320px;
+    right: 395px;
+}
+.map #japan {
+    position: absolute;
+    top: 270px;
+    right: 260px;
+}
+.map #italy {
+    position: absolute;
+    top: 275px;
+    right: 800px;
+}
+.map #brazil {
+    position: absolute;
+    bottom: 240px;
+    left: 550px;
+}
+.map #mexico {
+    position: absolute;
+    top: 350px;
+    left: 290px;
+}
+.map #egypt {
+    position: absolute;
+    top: 390px;
+    right: 740px;
+}
+#page2 .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent; /* 设置为圆形的背景颜色 */
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; */
+    transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+#page2 .square {
+    width: 200px;
+    height: 200px;
+    font-size: 16px;
+    background-color: #141413; /* 设置为方形的背景颜色 */
+    border-radius: 20px; /* 取消方形的圆角 */
+}
+#page2 .content {
+    display: none; /* 默认隐藏内容 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    background-color: #151414;
+}
+/* 轮播图 */
+#page2 .lunbo {
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+.lunbo .container {
+    position: absolute;
+    top: 130px;
+    left: 350px;
+}
+
+#page2 .slide .lunbo .container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+          .swiper2 {
+    width: 900px;
+    height: 548px;
+  }
+  
+  .swiper2 .swiper-slide {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* .swiper2 .swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+  }
+  
+  .swiper2 .swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+  }
+  
+  .swiper2 .swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+  }
+  
+  .swiper2 .swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+  } */
+  
+  /* 第二屏 第三页 */
+  .leibie {
+    position: relative;
+    padding-left: 30px;
+    height: 800px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  .ca .categories {
+    position: absolute;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 120px;
+    overflow: hidden;
+    width: 1300px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .ca .categories img {
+    width: 160px;
+  }
+  .acti {
+    position: relative;
+    margin-top: 250px;
+  }
+  .acti #ac {
+    position: absolute;
+    left: -100px;
+  }
+  .acti .acti_de {
+    position: absolute;
+    display: flex;
+    margin-top: 130px;
+    flex-direction: row;
+    margin-left: 120px;
+    width: 1300px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  /* .acti .acti_de img {
+    box-shadow: 0 0 0 1px #b0acac;
+  } */
+
+/* 第三屏 */
+#page3 .slide {
+    position: relative;
+}
+/* 第三屏 第一页 */
+.recommendation {
+    position: relative;
+    overflow: hidden;
+    height: 800px;
+    background-color: #fff;
+}
+.recommendation .re_title {
+    position: absolute;
+    top: 0;
+    left: 120px;
+}
+.recommendation .box_acti {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 190px;
+    left: 290px;
+    width: 1200px;
+    height: 500px;
+}
+.recommendation .box_acti img{
+    width: 380px;
+    height: 240px;
+}
+.box_acti .circle2 {
+    position: relative;
+    width: 380px;
+    height: 240px;
+    /* border-radius: 50%; */
+    background-color: pink; /* 设置为圆形的背景颜色 */
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; */
+    transition: all 0.3s ease; /* 添加过渡效果 */
+}
+.circle2 img {
+    position: absolute;
+    width: 380px;
+}
+.square2 {
+    width: 380px;
+    height: 240px;
+    font-size: 16px;
+    background-color: #c6c6bb; /* 设置为方形的背景颜色 */
+    border-radius: 20px; /* 取消方形的圆角 */
+    z-index: 10;
+}
+.content2 {
+    display: none; /* 默认隐藏内容 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 380px;
+    height: 240px;
+    line-height: 240px;
+    text-align: center;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* 第三屏 第二页 */
+.budd {
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: #fff;
+}
+.column {
+    width: 400px;
+    margin-top: 130px;
+    font-size: 15px;
+    padding-left: 120px;
+}
+.column .img1 {
+    padding-top: 50px;
+    width: 100%;
+}
+.column .img2 {
+    padding-bottom: 50px;
+}
+.column h2 {
+    padding-bottom: 50px;
+}
+/* 第四屏 */
+#page {
+    position: relative;
+}
+#page4 .user {
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-around;
+}
+.user .example {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    overflow: hidden;
+}
+.user .example button {
+    width: 250px;
+    height: 50px;
+    margin-left: 55px;
+    margin-top: 25px;
+    font-size: 15px;
+    border-radius: 25px;
+    border: none;
+}
+.user .example img {
+    width: 350px;
+}
+.user .example button:hover {
+    background-color: #fff;
+}
+.user .my- {
+    overflow: hidden;
+    padding-right: 250px;
+}
+.user .my- button {
+    width: 165px;
+    height: 50px;
+    font-size: 15px;
+    border: none;
+    border-radius: 25px;
+}
+.user .my- button:hover {
+    background-color: #fff;
+}
+.my- .image {
+    display: flex;
+    flex-direction: row;
+}
+#div1,#div2 {
+    margin-top: 50px;
+    width: 550px;
+    height: 50px;
+    font-size: 20px;
+}
+
+/* 关于我们的页面 */
+.about_us {
+    position: relative;
+    height: 800px;
+    font-family: '黑体';
+    /* display: flex;
+    flex-direction: row; */
+}
+.ab {
+    position: absolute;
+    top: 40%;
+    left: 250px;
+}
+.us {
+    position: absolute;
+    top: 25%;
+    left: 55%;
+    color: #fff;
+}
+.us h4 {
+    margin-bottom: 20px;
+}
+.us p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.us button {
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
