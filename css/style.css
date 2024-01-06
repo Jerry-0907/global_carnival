@@ -89,6 +89,44 @@ a {
     animation-delay: 1s;
     overflow: hidden;
 }
+#show-video {
+    position: fixed;
+    top: 40px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999 !important;
+    background: rgba(0, 0, 0, .85);
+    display: none;
+}
+
+.video-close {
+    width: 45px;
+    height: 45px;
+    color: #211d1e;
+    position: absolute;
+    right: 118px;
+    top: 113px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+#show-video video {
+    outline: none;
+    max-width: 85%;
+    max-height: 83vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 20px 40px rgb(0 0 0 / 50%);
+}
+#play {
+    position: absolute;
+    left: 350px;
+    bottom: 256px;
+    animation-delay: 1s;
+}
 /* 第二屏 */
 #page2 .slide {
     position: relative;
@@ -392,7 +430,9 @@ a {
     width: 350px;
 }
 .user .example button:hover {
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: rgb(92, 90, 90);
+    color: #fff;
 }
 .user .my- {
     overflow: hidden;
@@ -401,13 +441,14 @@ a {
 .user .my- button {
     width: 165px;
     height: 50px;
+    margin-top: 20px;
     font-size: 15px;
     border: none;
     border-radius: 25px;
 }
-.user .my- button:hover {
+/* .user .my- button:hover {
     background-color: #fff;
-}
+} */
 .my- .image {
     display: flex;
     flex-direction: row;
@@ -451,4 +492,105 @@ a {
     margin-top: 20px;
     font-size: 16px;
 }
+
+/* 鼠标悬浮效果 */
+.hvr-float {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+    -webkit-transform: translateY(-8px);
+    background-color: rgb(92, 90, 90);
+    color: #fff;
+    transform: translateY(-8px);
+  }
+  .hvr-grow-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+  }
+  .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .hvr-shrink {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  .hvr-bubble-float-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-bubble-float-right:before {
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 10px);
+    right: 0;
+    content: '';
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #e1e1e1;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-bubble-float-right:hover, .hvr-bubble-float-right:focus, .hvr-bubble-float-right:active {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  .hvr-bubble-float-right:hover:before, .hvr-bubble-float-right:focus:before, .hvr-bubble-float-right:active:before {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
 

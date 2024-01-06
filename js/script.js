@@ -31,6 +31,27 @@ $(function() {
     })
 })
 
+//播放视频 
+function enlargeAndTransform3(element) {
+  document.getElementById('play').src = "images/视频 (1).png"
+}
+
+function shrinkAndRestore3(element) {
+  document.getElementById('play').src = "images/视频.png"
+  
+}
+$(function() {
+$(".view_more_video").click(function() {
+$("#show-video").show();
+        document.getElementById("demo").load();
+        document.getElementById("demo").play();
+})
+$(".video-close").click(function() {
+$("#show-video").hide();
+        document.getElementById("demo").pause();
+})
+})
+
 // 第二屏 世界地图 图标
 function enlargeAndTransform(element) {
     element.classList.add('square');
@@ -63,6 +84,7 @@ function enlargeAndTransform2(element) {
   }
 
 // 第四屏 my-
+// 默认点击
 function show_a() {
     var btn_c = document.getElementById("btn_c");
     var divobj1 = document.getElementById("div1");
@@ -99,5 +121,7 @@ function show_m() {
     document.getElementById("a4").style.display = "none";
     document.getElementById("a5").style.display = "block";
 }
+
+
 
       
