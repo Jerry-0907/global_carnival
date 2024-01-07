@@ -91,7 +91,7 @@ a {
 }
 #show-video {
     position: fixed;
-    top: 40px;
+    top: 0;
     bottom: 0;
     right: 0;
     left: 0;
@@ -117,7 +117,7 @@ a {
     max-height: 83vh;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 52%;
     transform: translate(-50%, -50%);
     box-shadow: 0 20px 40px rgb(0 0 0 / 50%);
 }
